@@ -11,7 +11,7 @@ def rock_paper_scissors(f_name,strat="old"):
         1:6,
         2:0,
         -2:6
-        }
+    }
     # -1: lose, 0:draw, 1:win
     for line in f:
         # Character calculations
@@ -30,5 +30,5 @@ def rock_paper_scissors(f_name,strat="old"):
 
 ####################START####################
 if __name__ == "__main__":
-    #print("Points: ", rock_paper_scissors("elffile",strat="old"))
+    print("Points: ", rock_paper_scissors("elffile",strat="old"))
     print("Points: ", rock_paper_scissors("elffile",strat="new"))
