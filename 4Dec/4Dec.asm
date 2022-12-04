@@ -1,14 +1,14 @@
 // Dont include in loop
 
 // Change if 1>2
-(swaps___)
+(swaps)
     @1
     D=M
     @2
     D=D-M // D = @1>@2
 
     // Jump if 2>=1
-    @change2___
+    @change2
     D;JLE
 
     //else swap values fo 1 and 2
@@ -29,17 +29,17 @@
     D=M
     @2
     M=D
-    @change2___
+    @change2
     0;JMP
 
-    (change2___)
+    (change2)
         @3
         D=M
         @4
         D=D-M // D = @1>@2
 
         // Jump if 2>=1
-        @check___
+        @check
         D;JLE
 
         //else swap values fo 1 and 2
@@ -60,7 +60,7 @@
         D=M
         @4
         M=D
-        @check___
+        @check
         0;JMP
 
 
@@ -75,7 +75,7 @@
     // 1>3 D+
     D=D-M
 
-    @check2___
+    @check2
     D;JGT
 
 
@@ -85,11 +85,11 @@
     @4
     D=D-M
     // Jump to add if true, else end
-    @add___
+    @add
     D;JGE
-    @check2___
+    @check2
     0;JMP
-(check2___)
+(check2)
     // Cases: 1[1]>2[1]:1 n1[1]<2[1]:2 eed to change names in python
     @3
     D=M
@@ -97,7 +97,7 @@
     // 1>3 D+
     D=D-M
 
-    @end___
+    @end
     D;JGT
 
 
@@ -107,28 +107,25 @@
     @2
     D=D-M
     // Jump to add if true, else end
-    @add___
+    @add
     D;JGE
-    @end___
+    @end
     0;JMP
 
 
 
 // Add one to reg0
-(add___)
+(add)
     @0
     M=M+1
 
-    @end___
+    @end
     0;JMP
 
 
-(end___)
+(end)
     @6
-    D=A
-    @6
-    D=D+M
-    A=D
+    A=M
     0;JMP
 
 
