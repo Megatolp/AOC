@@ -1,10 +1,9 @@
 
 (setvals___)
-@setvals___next
+    @setvals___next
     D=A
     @6
-    M=D // Current address of setvals[i]
-    0;JMP
+    M=D // Current address of setvals[i+1]
     // set val to {val}
     @val1 // val
     D=A
@@ -25,5 +24,5 @@
     D=A
     @4
     M=D
-    @swaps
-    0;JMP
+    @check
+    A;JMP

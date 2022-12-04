@@ -3,7 +3,7 @@ import re
 Setup = open("start.asm","r").read()
 set_vals = ""
 main = open("4Dec.asm","r").read()
-trueend = open("trueend.asm","r").read()
+trueend ="\n" + open("trueend.asm","r").read() + "\n"
 
 inputs = open("elffile","r").readlines()
 
@@ -20,12 +20,12 @@ for index, input in enumerate(inputs):
     setvals = setvals.replace("___",str(index))
     set_vals += setvals
     imax+=1
-setvals += f"(setvals{imax})"
+setvals += f"(\nsetvals{imax})"
 
 
 txtbuf = ""
-txtbuf = Setup + main + set_vals + trueend
+txtbuf = Setup  + main + set_vals + trueend
 
 
-open("outshort3.asm","w").write(txtbuf)
+open("outshort4.asm","w").write(txtbuf)
 

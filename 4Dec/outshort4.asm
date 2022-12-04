@@ -7,7 +7,7 @@ D=M
 D=A
 @6
 M=D
-A=D
+@44
 A;JMP// Dont include in loop
 
 // Change if 1>2
@@ -27077,6 +27077,7 @@ A;JMP// Dont include in loop
     M=D
     @check
     A;JMP
+(setvals1000)
 (trueend)
     @trueend
     0;JMP
