@@ -1,30 +1,22 @@
 // Useage repcace @10, 11, 12, 13 with values 1-4
 // Dont include in loop
-@0
-D=A
-M=D
 
 
-// Scheck2___et 1 to 10
-@120 // val
-D=A
-@1 
-M=D
 
-// Set 2 to val
-@5 //val
+// Set val to {val}
+@val2 //val
 D=A
 @2
 M=D
 
-// Set 3 to 12
-@144 //val
+// Set val to {val}
+@val3 //val
 D=A
 @3
 M=D
 
-// Set 4 to 13
-@1 // val
+// Set val to {val}
+@val4 // val
 D=A
 @4
 M=D
