@@ -1,28 +1,5 @@
-// Useage repcace @10, 11, 12, 13 with values 1-4
 // Dont include in loop
 
-
-
-// Set val to {val}
-@val2 //val
-D=A
-@2
-M=D
-
-// Set val to {val}
-@val3 //val
-D=A
-@3
-M=D
-
-// Set val to {val}
-@val4 // val
-D=A
-@4
-M=D
-
-
-// Sort in each set
 // Change if 1>2
 (swaps___)
     @1
@@ -147,7 +124,12 @@ M=D
 
 
 (end___)
-
+    @6
+    D=A
+    @6
+    D=D+M
+    A=D
+    0;JMP
 
 
 
